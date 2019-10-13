@@ -5,7 +5,9 @@ A program in C that can calculate cyclic/non cyclic group ad its generator. So i
 In this repo there is:
 
 -**mylib.h** = contains all the functions used.
+
 -**dlog.c** = it's the main module.
+
 -**dlog** = executable program.
 
 
