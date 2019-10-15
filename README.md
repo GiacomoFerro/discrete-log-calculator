@@ -1,6 +1,6 @@
 # discrete-log-calculator
 
-A program in C that can calculate cyclic/non cyclic group ad its generator. So it calculates the exponent (a=g^i) starting from the seed of the group.
+A program in C that can calculate cyclic/non cyclic group ad its generator. So it calculates the exponent (a=g^i) starting from the seed of the group. After this step, it calculates legendre number of quadratic/non quadratic residue.
 
 In the src folder there is:
 
