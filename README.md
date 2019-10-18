@@ -13,3 +13,10 @@ A program in C that can calculate cyclic/non cyclic group ad the cyclic generato
   -**dlog** = executable program.
   
 -----------------------------------------------------------------------------------
+**diffie-hellman keys exchange**:
+
+The main idea of DH algo is create a sessione key between two principal A and B without interchange the key.
+DH uses public key scheme and number theory to ensure this property.
+
+NOTE: This program uses random number for simulation. To prevent critto-analytic attacks you have to solve pseudorandom problem in C.
+
