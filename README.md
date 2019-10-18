@@ -1,4 +1,4 @@
-# fundamentals of cryptography
+# Foundations of cryptography
 
 In the src folder there are:
 
