@@ -8,7 +8,7 @@ A program in C that can calculate cyclic/non cyclic group ad the cyclic generato
 
 -----------------------------------------------------------------------------------
 
-**diffie-hellman keys exchange**:
+**diffie-hellman keys exchange (based on the discrete log problem) **:
 
 The main idea of DH algo is create a sessione key between two principal A and B without interchange the key.
 DH uses public key scheme and number theory to ensure this property.
