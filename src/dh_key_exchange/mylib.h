@@ -29,12 +29,24 @@ int generate_Kab(principal pr[] , directory dir, int prime, int initiator, int r
 
 //begin of functions
 
+/*
+insert public key of the principal in the directory 'dir'
+*/
+
 directory update_dir(principal pr[], directory dir, int pos){
  	//insert public key of the principal
 	dir.P[pos]=pr[pos].public_key;
 	return dir;
    
 }
+
+/*generate KAB given:
+ 	prime = prime number
+ 	indexInit = index of principal private key in list of principal pr
+	indexResp = index of prinicpal public key in dir
+	pr = list of principal private key
+	dir = directory of principal public key
+*/
 
 int generate_Kab( principal pr[],  directory dir, int prime, int indexInit, int indexResp){
 	
@@ -48,6 +60,9 @@ int generate_Kab( principal pr[],  directory dir, int prime, int indexInit, int 
 
 }
 
+/*
+	update of public anche private key for a principal of index 'pos' in the list
+*/
 
 void update_principals(principal pr[], int seed , int prime, int group[],int pos){
 	
