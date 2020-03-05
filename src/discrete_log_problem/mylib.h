@@ -71,7 +71,7 @@ bool is_quadratic_residue(int q, int p){
 }
 
 
-
+/*allocate values of the group*/
 void allocate_val(int real[], int old[], int p){
 
 	int i,index;
@@ -83,7 +83,7 @@ void allocate_val(int real[], int old[], int p){
 		}	
 	}
 }
-
+/*remove zero values from a group*/
 int optimize(int group[], int p){
 	
 	int i,dim;
@@ -111,7 +111,9 @@ void print_array(int a[], int dim){
 
 }
 
-
+/*
+return true if n is prime number
+*/
 bool is_prime(int n){
 
 	int i;
@@ -124,6 +126,7 @@ bool is_prime(int n){
 
 }
 
+/*calculate a coprimes group*/
 void calculate_CoGroup(int p, int group[]){
 
 	int i=0, index=0;
@@ -137,7 +140,7 @@ void calculate_CoGroup(int p, int group[]){
 
 }
 
-
+/* check if two numbers are coprime*/
 bool check_coprimes(int a, int b){
 	
 	int min = a;
@@ -152,6 +155,7 @@ bool check_coprimes(int a, int b){
 
 }
 
+/* given a cyclic group and prime number p, calculate its generator*/
 int calculate_generator(int group[], int p){
 
 	int i,j;
@@ -189,7 +193,7 @@ bool is_contained(int num, int a[], int dim){
 	return false;
 }
 
-
+/* calculate discrete log given a seed of the cyclic group*/
 void calculate_discreteLog(int g, int group[], int p, int ris[]){
 
 	//random discrete log
